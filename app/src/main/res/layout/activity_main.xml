@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gps_test.MainActivity">
+
+    <EditText
+        android:id="@+id/gps_location"
+        android:textSize="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:gravity="top|left"
+        android:singleLine="false"
+        android:focusable="false"
+        android:scrollbars="vertical"
+        android:text="" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="1"
+            android:textSize="8dp"
+            android:id="@+id/gps_start_network"
+            android:text="Get Location\n(Network Provider)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_weight="1"
+            android:textSize="8dp"
+            android:id="@+id/gps_start_gps"
+            android:text="Get Location\n(GPS Provider)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_weight="1"
+            android:textSize="8dp"
+            android:id="@+id/gps_start_passive"
+            android:text="Get Location\n(Passive Provider)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
